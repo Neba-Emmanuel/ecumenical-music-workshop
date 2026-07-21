@@ -24,7 +24,7 @@ export default function Page() {
           fontWeight: 600,
           letterSpacing: '0.02em'
         }}>
-          Made with love for
+          Made with love for MDP2026 by
           <span aria-hidden="true" style={{ color: '#efb823', margin: '0 0.35rem' }}>•</span>
           <a
             href="https://neba-emmanuel.vercel.app/"
@@ -36,7 +36,7 @@ export default function Page() {
               textDecoration: 'none'
             }}
           >
-            MDP2026
+            Neba Emmanuel
           </a>
         </p>
       </footer>
