@@ -24,7 +24,7 @@ export default function Page() {
           fontWeight: 600,
           letterSpacing: '0.02em'
         }}>
-          Made with love
+          Made with love for
           <span aria-hidden="true" style={{ color: '#efb823', margin: '0 0.35rem' }}>•</span>
           <a
             href="https://neba-emmanuel.vercel.app/"
