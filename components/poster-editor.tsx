@@ -27,7 +27,7 @@ export default function PosterEditor({
   const fileInputRef = useRef<HTMLInputElement>(null)
 
   return (
-    <div style={{
+    <div className="poster-editor-panel" style={{
       backgroundColor: '#ffffff',
       borderRadius: '1rem',
       boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
@@ -146,6 +146,7 @@ export default function PosterEditor({
           Your Name
         </label>
         <input
+          className="poster-form-input"
           id="name"
           type="text"
           value={name}
@@ -190,6 +191,7 @@ export default function PosterEditor({
           Event Dates
         </label>
         <input
+          className="poster-form-input"
           id="date"
           type="text"
           value={date}
@@ -227,6 +229,7 @@ export default function PosterEditor({
           Location
         </label>
         <input
+          className="poster-form-input"
           id="location"
           type="text"
           value={location}

@@ -83,7 +83,7 @@ export default function PosterGenerator() {
   const isDisabled = !photo && !name
 
   return (
-    <div style={{
+    <div className="poster-generator-section" style={{
       minHeight: '100vh',
       paddingTop: '3rem',
       paddingBottom: '3rem',
@@ -96,7 +96,7 @@ export default function PosterGenerator() {
         marginRight: 'auto',
       }}>
         {/* Header */}
-        <div style={{
+        <div className="poster-generator-heading" style={{
           textAlign: 'center',
           marginBottom: '3rem',
         }}>
@@ -146,9 +146,9 @@ export default function PosterGenerator() {
           </p>
         </div>
 
-        <div style={{
+        <div className="poster-generator-grid" style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(24rem, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 24rem), 1fr))',
           gap: '2.5rem',
           alignItems: 'start',
         }}>
@@ -165,7 +165,7 @@ export default function PosterGenerator() {
           />
 
           {/* Preview Panel */}
-          <div style={{
+          <div className="poster-preview-panel" style={{
             display: 'flex',
             flexDirection: 'column',
             gap: '1.5rem',
@@ -179,11 +179,12 @@ export default function PosterGenerator() {
             />
 
             {/* Action Buttons */}
-            <div style={{
+            <div className="poster-actions" style={{
               display: 'flex',
               gap: '0.75rem',
             }}>
               <button
+                className="poster-action-button"
                 onClick={downloadPoster}
                 disabled={isDisabled}
                 style={{
@@ -220,6 +221,7 @@ export default function PosterGenerator() {
                 Download
               </button>
               <button
+                className="poster-action-button"
                 onClick={sharePoster}
                 disabled={isDisabled}
                 style={{

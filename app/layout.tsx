@@ -3,9 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
+  title: 'MDP Ecumenical Music Workshop 2026',
+  description: 'Create and share your personalized MDP Ecumenical Music Workshop poster.',
   icons: {
     icon: [
       {

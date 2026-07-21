@@ -161,3 +161,62 @@
     @apply bg-background text-foreground;
   }
 }
+
+@media (max-width: 680px) {
+  .poster-generator-section {
+    overflow: hidden;
+    padding: 2rem 0.75rem 2.5rem !important;
+  }
+
+  .poster-generator-heading {
+    margin-bottom: 2rem !important;
+  }
+
+  .poster-generator-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+
+  .poster-editor-panel {
+    position: relative !important;
+    top: auto !important;
+    min-width: 0;
+    padding: 1.25rem !important;
+    border-radius: 0.875rem !important;
+  }
+
+  .poster-form-input {
+    display: block;
+    min-width: 0;
+    min-height: 3rem;
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    opacity: 1;
+    -webkit-text-fill-color: #111827;
+  }
+
+  .poster-preview-panel {
+    min-width: 0;
+    gap: 1rem !important;
+  }
+
+  .poster-actions {
+    position: sticky;
+    bottom: 0.75rem;
+    z-index: 30;
+    gap: 0.5rem !important;
+    padding: 0.5rem;
+    border: 1px solid rgba(124, 58, 237, 0.14);
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 12px 30px rgba(46, 16, 101, 0.18);
+    backdrop-filter: blur(12px);
+  }
+
+  .poster-action-button {
+    min-width: 0;
+    min-height: 3rem;
+    padding: 0.75rem 0.6rem !important;
+    font-size: 0.85rem !important;
+  }
+}
