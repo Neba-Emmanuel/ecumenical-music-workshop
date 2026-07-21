@@ -195,7 +195,7 @@ const PosterPreview = forwardRef<HTMLDivElement, PosterPreviewProps>(
                 textTransform: 'uppercase',
               }}
             >
-              One voice · One faith
+              Sing It · Mean It
             </p>
           </div>
 
